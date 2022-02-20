@@ -1,0 +1,127 @@
+//320-480
+
+.modal {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  //   font-size: 22px;
+  //   line-height: 1.15;
+  //   text-align: center;
+  letter-spacing: 0.03em;
+  color: #d41443;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 1000ms var(--cubic);
+
+  padding: 40px;
+  min-width: 320px;
+  // min-height: 609px;
+  background-color: #fff5f6;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-form-field__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-input-radio:checked:before {
+  content: ' ';
+  display: block;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-right: 2px;
+  background: #d41443;
+}
+
+.modal-input-radio:not(:last-child) {
+  margin-left: 10px;
+}
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #ffb8ca;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  //   background-color: var(--primary-white-color);
+  background-color: transparent;
+  transition: fill 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+//480-768
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+//768-1199 without changes
+
+//1200+
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    // min-height: 581px;
+  }
+}
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(1) rotate(720deg);
+//   transition: transform 1000ms var(--cubic);
+
+//   padding: 40px;
+//   width: 528px;
+//   min-height: 581px;
+//   background-color: var(--primary-white-color);
+//   border-radius: 4px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+// }
+
+// .modal__close-button {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   width: 30px;
+//   height: 30px;
+//   padding: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   cursor: pointer;
+//   background-color: var(--primary-white-color);
+//   transition: fill 250ms var(--cubic);
+
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//   }
+// }
