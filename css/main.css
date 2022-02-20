@@ -270,28 +270,7 @@ ol {
 }
 
 .modal-input-radio:checked + .check::before {
-  background-color: #d41443;
-}
-
-.modal-input-radio::before {
-  content: ' ';
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: yellow;
-  margin-right: 5px;
-}
-
-.modal-input-radio:checked:before {
-  content: ' ';
-  display: block;
-  border-radius: 50%;
-  height: 14px;
-  width: 14px;
-  margin-right: 2px;
-  background-color: #d41443;
-  background: #d41443;
+  background-color: green;
 }
 
 .product-1:not(:last-child) {
