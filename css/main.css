@@ -308,11 +308,17 @@ ol {
   .modal {
     width: 450px;
   }
+  .product-1:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+  }
+  .product-1:not(:last-child) {
+    margin-right: 15px;
   }
 }
 

@@ -133,6 +133,9 @@
   .modal {
     width: 450px;
   }
+  .product-1:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 //768-1199 without changes
 
@@ -142,6 +145,9 @@
   .modal {
     width: 528px;
     // min-height: 581px;
+  }
+  .product-1:not(:last-child) {
+    margin-right: 15px;
   }
 }
 // .modal {
