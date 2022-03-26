@@ -244,6 +244,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .hidden {
@@ -293,7 +294,7 @@ ol {
   justify-content: center;
   align-items: center;
   fill: #ffb8ca;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid #d41342;
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
@@ -302,6 +303,10 @@ ol {
 
 .modal__close-button:hover, .modal__close-button:focus {
   fill: var(--accent-color);
+}
+
+.modal__close-icon {
+  fill: #d41342;
 }
 
 @media screen and (min-width: 480px) {

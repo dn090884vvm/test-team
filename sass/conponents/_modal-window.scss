@@ -30,6 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .hidden {
@@ -114,7 +115,7 @@
   align-items: center;
   fill: #ffb8ca;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid #d41342;
   border-radius: 50%;
   cursor: pointer;
   //   background-color: var(--primary-white-color);
@@ -125,6 +126,10 @@
   &:focus {
     fill: var(--accent-color);
   }
+}
+
+.modal__close-icon {
+  fill: #d41342;
 }
 
 //480-768
